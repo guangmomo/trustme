@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/item_study"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/studylv_img"
+        android:layout_width="50dp"
+        android:layout_height="50dp" 
+        android:src="@drawable/img1"
+        android:layout_centerVertical="true"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/studylv_img"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/studylv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:textColor="@android:color/black"
+                android:text="瓜瓜"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/studylv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="2016-01-17 13:55:23"
+                android:textColor="#7e7e7e"
+                android:textSize="8dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/studylv_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:maxLength="35"
+            android:singleLine="true"
+            android:textColor="#7e7e7e"
+            android:text="123456"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+    <Button
+        android:layout_centerVertical="true"
+        android:layout_width="60dp"
+        android:layout_height="35dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/bg_bt"
+        android:text="代拿"
+        android:textColor="@android:color/white"
+        android:clickable="true"
+        android:id="@+id/studylv_bt"/>
+
+</RelativeLayout>

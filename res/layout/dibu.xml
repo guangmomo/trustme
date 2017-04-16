@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/yuyu"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_alignParentBottom="true"
+    android:background="@android:color/white"
+    android:orientation="horizontal" >
+
+   <LinearLayout
+        android:id="@+id/dibu_re"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.8"
+        android:clickable="true"
+        android:gravity="center"
+        android:onClick="clickMe"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/img_recommend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/dibu_recommended"
+            android:clickable="true"
+            android:onClick="clickMe"
+            android:src="@drawable/dibu__recommend_draw" />
+
+       
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dibu_st"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:gravity="center"
+        android:onClick="clickMe"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/img_Study"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/dibu_Study"
+            android:clickable="true"
+            android:onClick="clickMe"
+            android:src="@drawable/dibu_study_draw" />
+        
+    </LinearLayout>
+<!-- 
+    <LinearLayout
+        android:id="@+id/dibu_app"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:gravity="center"
+        android:onClick="clickMe"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/img_application"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/dibu_application"
+            android:clickable="true"
+            android:onClick="clickMe"
+            android:src="@drawable/dibu__application_draw" />
+      
+    </LinearLayout>
+ -->
+    <LinearLayout
+        android:id="@+id/dibu_m"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.8"
+        android:clickable="true"
+        android:gravity="center"
+        android:onClick="clickMe"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/img_me"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/dibu_me"
+            android:clickable="true"
+            android:onClick="clickMe"
+            android:layout_marginRight="0dp"
+            android:src="@drawable/dibu__me_draw" />
+        
+      
+    </LinearLayout>
+
+</LinearLayout>

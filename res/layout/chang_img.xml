@@ -1,0 +1,67 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#b8b2b2"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#fff" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="头像修改"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:scaleType="fitXY"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/img1" />
+
+    <Button
+        android:id="@+id/buttonLocal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="本地相册选取头像" />
+
+    <Button
+        android:id="@+id/buttonCamera"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="手机拍照选取头像" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tosure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="40dp"
+            android:clickable="true"
+            android:text="确定"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/toback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:text="返回" 
+             android:textColor="@android:color/black"/>
+    </LinearLayout>
+
+</LinearLayout>

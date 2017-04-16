@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/order_item"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/user_icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp" 
+        android:src="@drawable/img1"
+        android:layout_centerVertical="true"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/user_icon"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:textColor="@android:color/black"
+                android:text="瓜瓜"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/dormitory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text=""
+                android:textColor="#7e7e7e"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+         <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+          
+            <TextView
+                android:id="@+id/shop_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:textColor="@android:color/black"
+                android:text="博雅园"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text=""
+                android:textColor="#7e7e7e"
+                android:textSize="8dp" />
+        </LinearLayout>
+        
+      
+    </LinearLayout>
+
+    <Button
+        android:layout_centerVertical="true"
+        android:layout_width="60dp"
+        android:layout_height="35dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/bg_bt"
+        android:text="详情"
+        android:textColor="@android:color/white"
+        android:clickable="true"
+        android:id="@+id/btn_detail"/>
+
+</RelativeLayout>
